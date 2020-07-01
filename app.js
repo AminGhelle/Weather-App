@@ -1,11 +1,5 @@
-// Initialise Storage Object
-// const storage = new Storage();
-
-// Get Stored Location data
-// const weatherLocation = storage.getLocationData();
-
 // Initialise Weather Object
-const weather = new Weather('London', 'UK');
+const weather = new Weather('London', 'uk');
 
 // Initialise Weather Object
 const ui = new UI();
@@ -22,8 +16,6 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
   // Change Location
   weather.changeLocation(city, country);
 
-  // Set Location in LS
-  // storage.setLocationData(city, country);
 
   // Get and display weather
   getWeather();
