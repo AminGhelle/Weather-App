@@ -12,7 +12,7 @@ class UI{
   }
 
   paint(weather){
-    this.location.textContent = `${weather.name}, ${weather.sys.country}`;
+    this.location.textContent = weather.name;
     this.desc.textContent = weather.weather[0].description;
     this.string.textContent = `${weather.main.temp}° C`;
     const image = weather.weather[0].icon;
