@@ -17,7 +17,7 @@ class UI {
   paint(weather) {
       this.location.textContent = `${weather.name}, ${weather.sys.country}`;
       this.desc.textContent = weather.weather[0].description;
-      this.string.textContent = `${weather.main.temp} (Celsius)`;
+      this.string.textContent = `${weather.main.temp} °C`;
       this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
       this.humidity.textContent = `Relative Humidity: ${weather.main.humidity} %`;
       this.pressure.textContent = `Relative pressure: ${weather.main.pressure} hPa` ;
