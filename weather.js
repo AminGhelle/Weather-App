@@ -1,24 +1,22 @@
-class Weather{
-  constructor(city, country){
-    this.apiKey = 'e79d25be47181176dcdd3dd6439fa361';
-    this.city = city;
-    this.country = country;
-  }
+class Openweather {
+    constructor(city, countryCode) {
+        this.APIkey = 'e79d25be47181176dcdd3dd6439fa361';
+        this.city = city;
+        this.countryCode = countryCode;
+    }
 
-  // Fetch weather from API
-  async getWeather(){
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country}&units=metric&appid=${this.apiKey}`);
+//   Fetch weather from API
+    async getWeather() {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.countryCode}&units=metric&appid=${this.APIkey}`);
 
-    const responseData = await response.json();
-
-    return responseData;
-    
-  }
-
-  // Change weather Loaction
-  changeLocation(city, country){
-    this.city = city;
-    this.country = country;
-  }
-}
-
+        const responseData = await response.json();
+        
+        return responseData;
+        
+    }
+// Change Location
+        changeLocation(city, countryCode) {
+            this.city = city;
+            this.countryCode = countryCode;
+        }
+    }
