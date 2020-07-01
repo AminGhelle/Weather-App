@@ -19,9 +19,9 @@ class UI {
       this.desc.textContent = weather.weather[0].description;
       this.string.textContent = `${weather.main.temp} (Celsius)`;
       this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
-      this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}`;
-      this.pressure.textContent = `Relative pressure: ${weather.main.pressure}`;
-      this.wind.textContent = `Wind speed: ${weather.wind.speed}mph`;
+      this.humidity.textContent = `Relative Humidity: ${weather.main.humidity} %`;
+      this.pressure.textContent = `Relative pressure: ${weather.main.pressure} hPa` ;
+      this.wind.textContent = `Wind speed: ${weather.wind.speed} m/h`;
       this.dewpoint.textContent = `Relative Dewpoint: ${weather.wind.deg} °C`;
       
   }
