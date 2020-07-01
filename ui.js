@@ -8,8 +8,9 @@ class UI {
       this.icon = document.getElementById('w-icon');
       this.humidity = document.getElementById('w-humidity');
       this.pressure = document.getElementById('w-pressure');
-      this.dewpoint = document.getElementById('w-dewpoint');
       this.wind = document.getElementById('w-wind');
+      this.dewpoint = document.getElementById('w-dewpoint');
+      
       
   }
 
@@ -20,8 +21,8 @@ class UI {
       this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
       this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}`;
       this.pressure.textContent = `Relative pressure: ${weather.main.pressure}`;
-      this.dewpoint.textContent = `Relative Dewpoint: ${weather.wind.deg} °C`;
       this.wind.textContent = `Wind speed: ${weather.wind.speed}mph`;
+      this.dewpoint.textContent = `Relative Dewpoint: ${weather.wind.deg} °C`;
       
   }
 }
