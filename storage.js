@@ -1,35 +1,35 @@
-class Storage {
-  constructor(){
-    this.city;
-    this.country;
-    this.defaultCity = 'London';
-    this.defaultCountry = 'UK';
-  }
+// class Storage {
+//   constructor(){
+//     this.city;
+//     this.country;
+//     this.defaultCity = 'London';
+//     this.defaultCountry = 'UK';
+//   }
 
-  getLocationData(){
-    if(localStorage.getItem('city') === null){
-      this.city = this.defaultCity;
-    } else {
-      this.city = localStorage.getItem('city');
-    }
+//   getLocationData(){
+//     if(localStorage.getItem('city') === null){
+//       this.city = this.defaultCity;
+//     } else {
+//       this.city = localStorage.getItem('city');
+//     }
 
-    if(localStorage.getItem('country') === null){
-      this.country = this.defaultCountry;
-    } else {
-      this.country = localStorage.getItem('country');
-    }
+//     if(localStorage.getItem('country') === null){
+//       this.country = this.defaultCountry;
+//     } else {
+//       this.country = localStorage.getItem('country');
+//     }
 
-    return{
-      city: this.city,
-      country: this.country
-    }
-  } 
+//     return{
+//       city: this.city,
+//       country: this.country
+//     }
+//   } 
 
-  setLocationData(){
-    localStorage.setItem('city', city);
-    localStorage.setItem('country', country);
-  }
+//   setLocationData(){
+//     localStorage.setItem('city', city);
+//     localStorage.setItem('country', country);
+//   }
 
 
 
-}
+// }
